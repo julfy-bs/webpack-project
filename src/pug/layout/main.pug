@@ -1,0 +1,22 @@
+include ../utils/mixins.pug
+block variables
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    title #{title}
+
+  body(class=pageClass)
+    .wrapper
+      include ../includes/modules/header
+      //include ../includes/modules/nav
+
+      .content-wrapper
+        block content
+      //include ../includes/modules/footer
+
+  block script
+

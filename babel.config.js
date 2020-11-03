@@ -4,23 +4,23 @@ module.exports = (api) => {
   return {
     presets: [
       [
-        '@babel/env',
+        "@babel/env",
         {
           modules: false,
-          targets: 'defaults',
+          targets: "defaults",
         },
       ],
     ],
-    plugins: ['@babel/transform-runtime'],
+    plugins: ["@babel/transform-runtime"],
     env: {
       test: {
         presets: [
           [
-            '@babel/env',
+            "@babel/env",
             {
-              modules: 'commonjs',
+              modules: "commonjs",
               targets: {
-                node: 'current',
+                node: "current",
               },
             },
           ],

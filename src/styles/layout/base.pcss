@@ -1,0 +1,101 @@
+html {
+  @include desktop {
+    font-size: 15px;
+  }
+
+  @include tablets {
+    font-size: 14px;
+  }
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1480px;
+  width: 83%;
+
+  @include desktop {
+    width: 91%;
+  }
+
+  @include phones {
+    width: 82%;
+  }
+}
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+  position: relative;
+}
+
+.fullscreen-section {
+  height: 100vh;
+  min-height: 650px;
+}
+
+.restrictedScroll {
+  overflow: hidden;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button[type="button"] {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+label {
+  cursor: pointer;
+}
